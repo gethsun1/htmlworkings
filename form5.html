@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Input Attributes</title>
+    </head>
+    <body>
+        <form action="" method="GET">
+            <fieldset>
+                <legend>Input Attributes</legend>
+                <br>
+                <br>
+                <label>username: </label><input  type="text" name="User ID" autofocus required>
+                <label for="phone">Phone Number: </label><input id="phone" type="tel" name="phone" pattern="[0-9]{4} [0-9]{3} [0-9]{3}" title="Please Enter Phone Number in this format: #### ### ###" autofocus required> 
+                <label for="email">Email: </label><input id="email" type="text" name="email" pattern="[a-zA-Z1-9]{3,26}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" title="Please Enter a Valid Email Address" autofocus required>
+                <br>
+                <br>
+                <label for="on">ON: </label><input  id="on" type="radio" name="onoff" value="on">
+                <label for="off">OFF: </label><input id="off" type="radio" name="onoff" value="off">
+                <br>
+                <br>
+                <label for="YES">YES: </label><input id="YES" type="checkbox" name="checkbox1" value="YES">
+                <label for="NO">NO: </label><input id="NO" type="checkbox" name="checkbox2" value="NO">
+                <br>
+                <br>
+                <br>
+                <br>
+                <input type="submit" value="send">
+            </fieldset>
+            
+        </form>
+    </body>
+</html>

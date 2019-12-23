@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Booking Form</title>
+    </head>
+    <body>
+        <form action="destination.html" method="GET">
+            <fieldset>
+                <legend>Personal Details: </legend>
+                <label for="name">Username: </label><input type="text" name="username" id="name"
+                     placeholder="Enter your username" autofocus required title="Please enter more than 3 charecters" pattern="[a-zA-Z]{3,}">
+                <label for="email">Email: </label><input type="text" name="email" id="email"
+                     placeholder="Enter your email  address" required title="Please enter a valid Email Address" pattern="[a-zA-Z]{3,}[@]{1}[.]{1}[a-zA-Z]{2,}">
+                <label for="phone">Phone Number: </label><input id="phone" type="tel" name="phone" required placeholder="Numbers only accepted" pattern="[0-9]{6,20}">
+                <label for="country">Pick your Country: </label><select id="country" name="country" required>
+                    <option value=""> </option>
+                    <option value="Ke">Kenya</option>
+                    <option value="Ug">Uganda</option>
+                    <option value="Tz">Tanzania</option>
+                    <option value="Rw">Rwanda</option>
+                    <option value="Ss">South Sudan</option>
+                    <option value="Br">Burundi</option>
+                    <option value="Cg">Congo</option>                    
+                </select>
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <legend>Booking Details: </legend>
+                <label for="date">Check in: </label><input id="date" type="date" name="date" min="2019-12-10">
+                <label for="date">Check out: </label><input id="date" type="date" name="date" min="2019-12-10">
+                <label for="guests">No. of Guests: </label><input id="guests" type="number" name="no. guests" min="1" max="6">
+                <br>
+                <p>Do you require meals?</p>
+                <label for="yesMeals">YES: </label><input id="yesMeals" type="radio"  name="meals" value="yesMeals">
+                <label for="noMeals">NO: </label><input id="noMeals" type="radio" name="meals" value="nomeals">
+                <br>
+                <label for="balcony">Do you want a Balcony?: </label><input type="checkbox" name="balcony" value="yes" >
+                <br>
+                <input type="image" src="images/submit1.png">
+                </fieldset>
+        </form>
+    </body>
+</html>
